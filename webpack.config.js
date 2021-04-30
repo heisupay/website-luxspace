@@ -9,9 +9,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 const environment = require("./configs/env");
 
-const templateFiles = fs.readdirSync(
-  path.resolve(__dirname, environment.paths.source, "templates")
-);
+const templateFiles = fs.readdirSync(path.resolve(__dirname, environment.paths.source, "templates"));
 const htmlPluginEntries = templateFiles.map(
   (template) =>
     new HTMLWebpackPlugin({
@@ -85,6 +83,14 @@ module.exports = {
         {
           from: path.resolve(environment.paths.source, "images", "content"),
           to: path.resolve(environment.paths.output, "images", "content"),
+          toType: "dir",
+          globOptions: {
+            ignore: ["*.DS_Store", "Thumbs.db"],
+          },
+        },
+        {
+          from: path.resolve(environment.paths.source, "images", "design"),
+          to: path.resolve(environment.paths.output, "images", "design"),
           toType: "dir",
           globOptions: {
             ignore: ["*.DS_Store", "Thumbs.db"],
