@@ -6,15 +6,18 @@
   <title>Luxspace</title>
   <meta name="description" content="Menjual furniture" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta property="og:title" content="Luxspace" />
-  <meta property="og:type" content="Menjual furniture" />
+  <meta property="og:description" content="Menjual furniture" />
   <meta property="og:url" content="https://Luxspace.com" />
   <meta property="og:image" content="https://Luxspace.com/images/content/preview-homepage.jpg" />
+
   <link rel="manifest" href="site.webmanifest" />
-  <link rel="apple-touch-icon" href="images/favicon.png" />
+  <link rel="apple-touch-icon" href="images/content/favicon.png" />
+
   <!-- Place favicon.ico in the root directory -->
   <link rel="stylesheet" href="./css/app.minify.css" />
-  <link rel="icon" href="images/content/favicon.png" />
+  <link rel="icon" href="images/favicon.ico" />
   <meta name="theme-color" content="#000" />
 </head>
 
@@ -24,7 +27,7 @@
 
   <!-- Start Hearder -->
   <header class="absolute w-full z-50 px-4">
-    <div class="container mx-auto py-5">
+    <div class="container mx-auto py-10">
       <div class="flex flex-strech items-center">
         <div class="w-56 flex items-center">
           <img src="./images/design/logo.png " alt="Luxspace - sebuah website yang menjual barang keren">
@@ -71,7 +74,6 @@
                   <path
                     d="M15.9773 12.2761H1.04219C0.466585 12.2761 0 12.5555 0 12.9002C0 13.2449 0.466668 13.5243 1.04219 13.5243H15.9773C16.5529 13.5243 17.0195 13.2449 17.0195 12.9002C17.0195 12.5555 16.5529 12.2761 15.9773 12.2761Z" />
                 </svg>
-
               </button>
             </li>
             <li class="ml-6">
@@ -90,7 +92,6 @@
                     d="M25.6499 4.66861C25.407 4.3655 25.0472 4.19168 24.6626 4.19168H4.82655L4.42595 2.21405C4.34232 1.80151 4.06563 1.45512 3.68565 1.28734L0.890528 0.0535392C0.567841 -0.0890044 0.192825 0.0615756 0.0528584 0.389627C-0.0872597 0.717781 0.0608116 1.0992 0.383347 1.24154L3.17852 2.47539L6.2598 17.6859C6.38117 18.285 6.90578 18.7197 7.50723 18.7197H22.7635C23.1152 18.7197 23.4003 18.4298 23.4003 18.0721C23.4003 17.7145 23.1152 17.4245 22.7635 17.4245H7.50728L7.13247 15.5743H22.8814C23.4828 15.5743 24.0075 15.1395 24.1288 14.5405L25.9101 5.74807C25.9876 5.36521 25.8928 4.97168 25.6499 4.66861ZM22.8814 14.2792H6.87012L5.08895 5.48684L24.6626 5.48689L22.8814 14.2792Z" />
                   <circle class="cart-filled" cx="25" cy="4.89023" r="4" fill="#f9cada">
                 </svg>
-
               </a>
             </li>
           </ul>
@@ -99,6 +100,45 @@
     </div>
   </header>
   <!-- End Header -->
+
+  <!-- Start : Section Hero | Left side -->
+  <section class="flex items-center hero">
+    <div
+      class="w-full absolute z-20 inset-0 md:relative md:w-1/2 text-center flex flex-col justify-center hero-caption">
+      <h1 class="text-3xl md:text-5xl leading-tight font-semibold">
+        The Room <br class="" /> You've Dreaming
+      </h1>
+      <h2 class="px-8 text-base md:px-0 md:text-lg my-6 tracking-wide">
+        Kami menyediakan furnature berkualitas yang <br class="hidden lg:block" /> membuat ruangan menjadi homey
+      </h2>
+      <div>
+        <a href="#browse-the-room"
+          class="bg-pink-400 text-black hover:bg-black hover:text-pink rounded-full px-8 py-3 mt-4 inline-block flex-none transition duration-200 ">Explore
+          Now</a>
+      </div>
+    </div>
+
+    <!-- END : Section Hero  | Left side-->
+
+    <div class="w-full inset-0 md:relative md:w-1/2">
+      <div class="relative hero-image">
+        <div class="overlay inset-0 bg-black opacity-30 z-10">
+
+        </div>
+        <div class="overlay right-0 buttom md:inset-0">
+          <button class="video hero-cta focus:outline-none z-30 modal-trigger" data-content='<div class="w-screen pb-56 md:w-full h-full">
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/llsjl-_gIpQ"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>'>
+          </button>
+        </div>
+        <img src="" alt="">
+      </div>
+    </div>
+  </section>
+  <!-- END: Section Hero -->
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () {
