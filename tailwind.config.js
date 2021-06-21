@@ -21,14 +21,14 @@ module.exports = {
 
       black: colors.black,
       white: colors.white,
-      gray: {...colors.coolGray, 100: "#f9f9f9", 200: "#f1f1f1"},
+      gray: { ...colors.coolGray, 100: "#F9F9F9", 200: "#F1F1F1" },
       red: colors.red,
       yellow: colors.amber,
       green: colors.emerald,
       blue: { ...colors.blue, 200: "#BCE&F0" },
       indigo: colors.indigo,
       purple: colors.violet,
-      pink: { ...colors.pink, 400: "#f9cada" },
+      pink: { ...colors.pink, 400: "#F9CADA" },
     },
     spacing: {
       px: "1px",

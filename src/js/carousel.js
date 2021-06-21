@@ -1,8 +1,8 @@
 import { addClass, removeClass } from "./utils-class";
 
-const carouselId = document.getElementById("carousel");
-const carouselItem = carouselId.getElementsByClassName("flex")[0];
-const carouselContainer = carouselId.getElemetByClassName("container")[0];
+const carouselId = document? .getElementById("carousel");
+const carouselItem = carouselId?.getElementsByClassName("flex")[0];
+const carouselContainer = carouselId?.getElemetByClassName("container")[0];
 
 function carouselCalculateOffset() {
   const carouselOffset = carouselContainer.getBoundingClientRect().left;
